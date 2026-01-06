@@ -29,7 +29,7 @@ const UserProfile = () => {
         }
 
         const res = await axios.get(
-          "http://localhost:5000/api/users/profile",
+          `${import.meta.env.VITE_API_URL}/api/users/profile`,
           {
             headers: {
               Authorization: `Bearer ${token}`,
@@ -68,7 +68,7 @@ const UserProfile = () => {
 
     try {
       const res = await axios.put(
-        "http://localhost:5000/api/users/updateProfile",
+        `${import.meta.env.VITE_API_URL}/api/users/updateProfile`,
         {
           name: editData.name,
           email: editData.email,
@@ -99,7 +99,7 @@ const UserProfile = () => {
 
     try {
       await axios.patch(
-        "http://localhost:5000/api/users/enable-daily-email",
+        `${import.meta.env.VITE_API_URL}/api/users/enable-daily-email`,
         {},
         {
           headers: {
@@ -135,7 +135,7 @@ const UserProfile = () => {
 
     try {
       await axios.delete(
-        "http://localhost:5000/api/users/deleteProfile",
+        `${import.meta.env.VITE_API_URL}/api/users/deleteProfile`,
         {
           headers: {
             Authorization: `Bearer ${token}`,

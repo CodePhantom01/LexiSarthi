@@ -21,7 +21,7 @@ const Home = () => {
         }
 
         const res = await axios.get(
-          "http://localhost:5000/api/words/getAllWords",
+          `${import.meta.env.VITE_API_URL}/api/words/getAllWords`,
           {
             headers: {
               Authorization: `Bearer ${token}`,
@@ -52,7 +52,7 @@ const Home = () => {
       try {
         const token = localStorage.getItem("token");
         const res = await axios.get(
-          "http://localhost:5000/api/words/getAllWords",
+          `${import.meta.env.VITE_API_URL}/api/words/getAllWords`,
           {
             headers: {
               Authorization: `Bearer ${token}`,

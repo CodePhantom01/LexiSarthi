@@ -40,7 +40,7 @@ const AdminPage = () => {
     try {
       setLoading(true);
       const res = await axios.get(
-        "http://localhost:5000/api/words/getAllWords",
+        `${import.meta.env.VITE_API_URL}/api/words/getAllWords`,
         authHeaders
       );
       setWords(res.data.data || []);
@@ -103,7 +103,7 @@ const AdminPage = () => {
         setMessage("Word updated successfully");
       } else {
         await axios.post(
-          "http://localhost:5000/api/words/addWord",
+          `${import.meta.env.VITE_API_URL}/api/words/addWord`,
           body,
           authHeaders
         );
