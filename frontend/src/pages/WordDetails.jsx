@@ -30,7 +30,7 @@ const WordDetails = () => {
       }
 
       const response = await axios.get(
-        `http://localhost:5000/api/words/searchWord/${word}`,
+        `${import.meta.env.VITE_API_URL}/api/words/searchWord/${word}`,
         {
           headers: {
             Authorization: `Bearer ${token}`,
