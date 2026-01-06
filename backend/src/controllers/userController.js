@@ -10,11 +10,6 @@ const signup = async (req, res) => {
     return res.status(400).json({ message: 'All fields are required' });
   }
 
-  // prevent admin signup
-  if (email === process.env.ADMIN_EMAIL) {
-    return res.status(403).json({ message: 'Admin account already exists' });
-  }
-
   // hash password
   const hashedPassword = await bcrypt.hash(password, 10);
 
