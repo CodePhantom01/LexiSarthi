@@ -14,7 +14,7 @@ const signup = async (req, res) => {
   if (email === process.env.ADMIN_EMAIL) {
     return res.status(403).json({ message: 'Admin account already exists' });
   }
-
+  
   // hash password
   const hashedPassword = await bcrypt.hash(password, 10);
 
