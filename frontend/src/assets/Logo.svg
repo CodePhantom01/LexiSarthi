@@ -1,0 +1,25 @@
+<svg width="800" height="400" viewBox="0 0 800 400" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="shieldGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#E91E63" />
+      <stop offset="50%" style="stop-color:#9C27B0" />
+      <stop offset="100%" style="stop-color:#2196F3" />
+    </linearGradient>
+  </defs>
+
+  <path d="M180 120 C 180 110, 200 100, 280 100 C 360 100, 380 110, 380 120 L 380 230 C 380 280, 280 330, 280 330 C 280 330, 180 280, 180 230 Z" 
+        stroke="url(#shieldGradient)" stroke-width="12" stroke-linejoin="round" fill="none"/>
+
+  <path d="M210 155 Q 240 145, 275 160 L 275 260 Q 240 245, 210 255 Z" fill="#FF5252" />
+  <text x="225" y="215" fill="white" font-family="Arial, sans-serif" font-size="35" font-weight="bold">अ</text>
+  
+  <path d="M345 155 Q 315 145, 280 160 L 280 260 Q 315 245, 345 255 Z" fill="#304FFE" />
+  <text x="300" y="215" fill="white" font-family="Arial, sans-serif" font-size="30" font-weight="bold">A</text>
+
+  <circle cx="330" cy="140" r="25" stroke="#3F51B5" stroke-width="8" fill="white"/>
+  <line x1="350" y1="160" x2="375" y2="185" stroke="#3F51B5" stroke-width="10" stroke-linecap="round"/>
+
+  <text x="410" y="200" fill="#4A148C" font-family="Segoe UI, Roboto, Arial, sans-serif" font-size="64" font-weight="bold">LexiSarthi</text>
+  <text x="412" y="235" fill="#757575" font-family="Arial, sans-serif" font-size="22">Hindi-English Vocabulary</text>
+  <text x="412" y="265" fill="#757575" font-family="Arial, sans-serif" font-size="22">Learning Platform</text>
+</svg>
