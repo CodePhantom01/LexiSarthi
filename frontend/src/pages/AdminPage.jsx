@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
 import axios from "axios";
 
-const AdminPage = () => {
+const AdminPage = ({ onLogout }) => {
   const navigate = useNavigate();
   const token = localStorage.getItem("token");
 
@@ -191,8 +191,8 @@ const AdminPage = () => {
   };
 
   const handleLogout = () => {
-    localStorage.removeItem("token");
-    navigate("/");
+    onLogout();                    
+    navigate("/", { replace: true });
   };
 
   return (
