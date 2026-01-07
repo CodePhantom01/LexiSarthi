@@ -68,11 +68,12 @@ const Home = () => {
   // INITIAL LOAD
   useEffect(() => {
     if (!token) {
-      setError("Please login to view words");
+      navigate("/authentication");
       return;
     }
     fetchWords();
-  }, []);
+  }, [token, navigate]);
+  
 
   // LOGOUT
   const handleLogout = () => {
