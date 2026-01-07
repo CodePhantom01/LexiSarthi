@@ -1,68 +1,71 @@
----
-
-````md
 # 📚 LexiSarthi
 
 A full-stack **Hindi–English Vocabulary Learning Platform** designed to help users improve English vocabulary with **Hindi meanings, pronunciation, examples, synonyms, antonyms**, and **daily word emails**.
 
-🔗 **Live App:** https://lexi-sarthi.vercel.app  
-🔗 **Backend API:** https://lexisarthi-backend.onrender.com  
-🔗 **GitHub Repository:** https://github.com/CodePhantom01/LexiSarthi  
+🔗 **Live App:** [https://lexi-sarthi.vercel.app](https://lexi-sarthi.vercel.app)
+🔗 **Backend API:** [https://lexisarthi-backend.onrender.com](https://lexisarthi-backend.onrender.com)
+🔗 **GitHub Repository:** [https://github.com/CodePhantom01/LexiSarthi](https://github.com/CodePhantom01/LexiSarthi)
 
 ---
 
 ## 🖼️ Screenshots
 
 ### Authentication
+
 ![Login](./screenshots/login.png)
 
 ### Word Details
+
 ![Word Details](./screenshots/word-details.png)
 
 ### Admin Panel
+
 ![Admin Panel](./screenshots/admin-panel.png)
 
 ---
 
 ## ✨ Features
 
-- 🔍 English vocabulary with Hindi meanings
-- 🔐 Secure JWT authentication (Login / Signup)
-- 🧑‍💼 Admin panel for managing words
-- 📧 Daily vocabulary emails using cron jobs
-- 👤 User profile & email preferences
-- 📱 Responsive UI built with Tailwind CSS
+* 🔍 English vocabulary with Hindi meanings
+* 🔐 Secure JWT authentication (Login / Signup)
+* 🧑‍💼 Admin panel for managing words
+* 📧 Daily vocabulary emails using cron jobs
+* 👤 User profile & email preferences
+* 📱 Responsive UI built with Tailwind CSS
 
 ---
 
 ## 🛠️ Tech Stack
 
 ### Frontend
-- React 19, Vite
-- React Router DOM
-- Tailwind CSS
-- Axios
+
+* React 19, Vite
+* React Router DOM
+* Tailwind CSS
+* Axios
 
 ### Backend
-- Node.js, Express.js
-- MongoDB Atlas, Mongoose
-- JWT Authentication, Bcrypt
-- Node-cron, Nodemailer
+
+* Node.js, Express.js
+* MongoDB Atlas, Mongoose
+* JWT Authentication, Bcrypt
+* Node-cron, Nodemailer
 
 ---
 
 ## 🚀 Getting Started
 
 ### Prerequisites
-- Node.js (v14+)
-- MongoDB Atlas or Local MongoDB
+
+* Node.js (v14+)
+* MongoDB Atlas or Local MongoDB
 
 ### Installation
 
 ```bash
 git clone https://github.com/CodePhantom01/LexiSarthi.git
 cd LexiSarthi
-````
+```
 
 ```bash
 # Backend
@@ -211,4 +214,4 @@ Docs:
 
 ## ❤️ Built With MERN Stack
 
-```
+---
