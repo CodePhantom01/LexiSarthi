@@ -3,7 +3,7 @@ import { UserCircle, LogOut } from "lucide-react";
 import { useNavigate } from "react-router-dom";
 import axios from "axios";
 
-const Home = () => {
+const Home = ({ onLogout }) => {
   const [allWords, setAllWords] = useState([]);
   const [filteredWords, setFilteredWords] = useState([]);
   const [loading, setLoading] = useState(false);
@@ -77,8 +77,7 @@ const Home = () => {
 
   // LOGOUT
   const handleLogout = () => {
-    localStorage.removeItem("token");
-    setToken(null);            // update state so React re-renders
+    onLogout();               // update App state, this function passes as prop from app.jsx
     navigate("/", { replace: true });
   };
   
