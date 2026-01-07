@@ -41,11 +41,14 @@ const getAllWords = async (req, res) => {
 const searchWord = async (req, res) => {
   try {
     const targetWord = req.query.word || req.params.word || req.body.word;
+
     if (!targetWord) {
       return res.status(400).json({ message: "Word is required for search" });
     }
 
-    const foundWord = await Word.findOne({ word: targetWord });
+    const foundWord = await Word.findOne({
+      word: { $regex: `^${targetWord}$`, $options: "i" }
+    });
 
     if (!foundWord) {
       return res.status(404).json({ message: "Not found" });
@@ -53,9 +56,13 @@ const searchWord = async (req, res) => {
 
     res.status(200).json({ data: foundWord });
   } catch (error) {
-    res.status(500).json({ message: "Error searching word", error: error.message });
+    res.status(500).json({
+      message: "Error searching word",
+      error: error.message,
+    });
   }
 };
+
 
 const updateWord = async (req, res) => {
   try {
