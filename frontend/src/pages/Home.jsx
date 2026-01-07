@@ -68,7 +68,7 @@ const Home = () => {
   // INITIAL LOAD
   useEffect(() => {
     if (!token) {
-      navigate("/");  // redirect to login
+      navigate("/");  // redirect to authentication
     } else {
       fetchWords();
     }
