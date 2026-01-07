@@ -68,7 +68,7 @@ const Home = () => {
   // INITIAL LOAD
   useEffect(() => {
     if (!token) {
-      navigate("/authentication");
+      navigate("/");
       return;
     }
     fetchWords();
