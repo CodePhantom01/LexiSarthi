@@ -77,9 +77,11 @@ const Home = () => {
 
   // LOGOUT
   const handleLogout = () => {
-    localStorage.removeItem("token");  // Remove token
-    navigate("/");                     // Redirect to login page
-  };  
+    localStorage.removeItem("token");
+    setToken(null);            // update state so React re-renders
+    navigate("/", { replace: true });
+  };
+  
 
   return (
     <div className="min-h-screen bg-slate-50 px-4 py-4">
