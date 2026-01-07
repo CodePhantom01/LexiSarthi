@@ -12,7 +12,7 @@ const Home = () => {
 
   const navigate = useNavigate();
   const API_URL = import.meta.env.VITE_API_URL;
-  const token = localStorage.getItem("token");
+  const token = window.localStorage.getItem("token");
 
   const fetchWords = async () => {
     try {
@@ -68,18 +68,18 @@ const Home = () => {
   // INITIAL LOAD
   useEffect(() => {
     if (!token) {
-      navigate("/");
-      return;
+      navigate("/");  // redirect to login
+    } else {
+      fetchWords();
     }
-    fetchWords();
-  }, [token, navigate]);
+  }, [token, navigate]);  
   
 
   // LOGOUT
   const handleLogout = () => {
-    localStorage.removeItem("token");
-    navigate("/");
-  };
+    localStorage.removeItem("token");  // Remove token
+    navigate("/");                     // Redirect to login page
+  };  
 
   return (
     <div className="min-h-screen bg-slate-50 px-4 py-4">
@@ -101,6 +101,7 @@ const Home = () => {
           >
             <LogOut size={20} /> Logout
           </button>
+
         </div>
       </div>
 
