@@ -204,14 +204,6 @@ Docs:
 
 ---
 
-## 📌 Future Enhancements
-
-* Audio pronunciation support
-* Spaced repetition learning
-* Mobile-first UI improvements
-
----
-
 ## ❤️ Built With MERN Stack
 
 ---
