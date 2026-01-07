@@ -105,7 +105,7 @@ const Home = () => {
 
       {/* Content */}
       <div className="max-w-6xl mx-auto bg-white rounded-xl shadow border p-5">
-        <div className="flex justify-between mb-4">
+      <div className="flex flex-col gap-4 sm:flex-row sm:justify-between mb-4">
           <div>
             <h2 className="text-xl font-semibold">Vocabulary Words List</h2>
             <p className="text-sm text-slate-600">
@@ -113,16 +113,16 @@ const Home = () => {
             </p>
           </div>
 
-          <div className="flex gap-2">
+          <div className="flex flex-col sm:flex-row gap-2 w-full sm:w-auto">
             <input
               value={searchTerm}
               onChange={(e) => setSearchTerm(e.target.value)}
               placeholder="Search word"
-              className="px-3 py-2 border rounded text-sm"
+              className="w-full sm:w-56 px-3 py-2 border rounded text-sm"
             />
             <button
               onClick={handleSearch}
-              className="px-4 py-2 bg-slate-800 text-white rounded text-sm"
+              className="w-full sm:w-auto px-4 py-2 bg-slate-800 text-white rounded text-sm"
             >
               Search
             </button>
