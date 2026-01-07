@@ -123,20 +123,61 @@ npm run dev
 
 ## 📁 Project Structure
 
-```
+```bash
 LexiSarthi/
 ├── backend/
 │   ├── src/
+│   │   ├── config/
+│   │   │   ├── db.js
+│   │   │   └── jwtAuth.js
 │   │   ├── controllers/
-│   │   ├── models/
-│   │   ├── routes/
-│   │   ├── middlewares/
+│   │   │   ├── userController.js
+│   │   │   └── wordController.js
 │   │   ├── jobs/
+│   │   │   └── dailyWordJob.js
+│   │   ├── middlewares/
+│   │   │   ├── adminMiddleware.js
+│   │   │   └── jwtAuthMiddleware.js
+│   │   ├── models/
+│   │   │   ├── userModel.js
+│   │   │   └── wordModel.js
+│   │   ├── routes/
+│   │   │   ├── userRoutes.js
+│   │   │   └── wordRoutes.js
 │   │   └── services/
-│   └── server.js
-└── frontend/
-    └── src/
-        └── pages/
+│   ├── app.js
+│   ├── server.js
+│   ├── package.json
+│   └── .env
+│
+├── frontend/
+│   ├── public/
+│   ├── src/
+│   │   ├── assets/
+│   │   │   └── Logo.svg
+│   │   ├── pages/
+│   │   │   ├── Home.jsx
+│   │   │   ├── Login.jsx
+│   │   │   ├── Signup.jsx
+│   │   │   ├── Authentication.jsx
+│   │   │   ├── WordDetails.jsx
+│   │   │   ├── UserProfile.jsx
+│   │   │   └── AdminPage.jsx
+│   │   ├── App.jsx
+│   │   ├── main.jsx
+│   │   └── index.css
+│   ├── index.html
+│   ├── tailwind.config.js
+│   ├── vite.config.js
+│   ├── package.json
+│   └── .env
+│
+├── screenshots/
+│   ├── login.png
+│   ├── word-details.png
+│   └── admin-panel.png
+│
+└── README.md
 ```
 
 ---
