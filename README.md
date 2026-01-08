@@ -245,6 +245,27 @@ Docs:
 
 ---
 
+---
+## 🧪 Test Users
+
+For testing purposes, you can use the following test accounts.
+
+### 🔐 Admin (Hardcoded)
+    {
+      "name": "Admin",
+      "email": "admin@gmail.com",
+      "password": "Admin#123"
+    }
+
+### 👤 User
+    {
+      "name": "Mac Doe",
+      "email": "macdoe@example.com",
+      "password": "123"
+    }
+
+---
+
 ## ❤️ Built With MERN Stack
 
 ---
