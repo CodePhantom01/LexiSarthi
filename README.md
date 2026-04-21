@@ -102,9 +102,6 @@ VITE_API_URL=https://lexisarthi-backend.onrender.com
 VITE_ADMIN_EMAIL=admin@example.com
 ```
 
-⚠️ **Never commit real credentials to GitHub.**
-Reference: [https://docs.github.com/en/code-security](https://docs.github.com/en/code-security)
-
 ---
 
 ## ▶️ Running the Application
@@ -218,9 +215,6 @@ LexiSarthi/
 * Role-based admin authorization
 * CORS configuration
 
-Best practices:
-[https://expressjs.com/en/advanced/best-practice-security.html](https://expressjs.com/en/advanced/best-practice-security.html)
-
 ---
 
 ## ⏰ Automated Emails
@@ -229,8 +223,6 @@ Best practices:
 * Sends vocabulary emails to subscribed users
 * Implemented using `node-cron` and `nodemailer`
 
-Reference:
-[https://www.npmjs.com/package/node-cron](https://www.npmjs.com/package/node-cron)
 
 ---
 
@@ -239,9 +231,6 @@ Reference:
 * MongoDB Atlas (Cloud Database)
 * Mongoose ODM
 * Secure environment-based configuration
-
-Docs:
-[https://www.mongodb.com/atlas/database](https://www.mongodb.com/atlas/database)
 
 ---
 
@@ -263,9 +252,5 @@ For testing purposes, you can use the following test accounts.
       "email": "macdoe@example.com",
       "password": "123"
     }
-
----
-
-## ❤️ Built With MERN Stack
 
 ---
